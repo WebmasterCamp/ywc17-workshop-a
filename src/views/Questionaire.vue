@@ -1,5 +1,5 @@
 <template>
-  <div class="questionaire-container">
+  <div class="questionaire-container pt-5">
     <section class="taker-header">
       <b-container>
         <div class="text-center py-5 heading-container" v-if="!isStarted">
