@@ -12,11 +12,9 @@
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <!-- <b-nav-item href="/questionaire" :class="{active: $route.name === 'questionaire' }">Questionaire</b-nav-item>
-            <b-nav-item href="matching"  :class="{active: $route.name === 'matching' }">List of something</b-nav-item> -->
+            <b-nav-item href="article"  :class="{active: $route.name === 'article' }">บทความ</b-nav-item> 
           </b-navbar-nav>
         </b-collapse>
-
       </b-container>
   </b-navbar>
 </template>
