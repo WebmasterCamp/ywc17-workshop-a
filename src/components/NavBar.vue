@@ -1,6 +1,8 @@
 <template>
-    <b-navbar toggleable="lg">
-    <b-navbar-brand href="#"> <i class="fas fa-heart"></i> PsyJai</b-navbar-brand>
+    <b-navbar toggleable="lg" v-if="$route.name !== 'landing'">
+    <b-navbar-brand href="/home">
+        <img src="../assets/logo.svg" class="logo" />
+    </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -18,6 +20,9 @@
 <style lang="css">
 .navbar {
     box-shadow: 0 8px 30px rgba(10,31,68,.1);
+}
+.logo {
+    height: 100%;
 }
 
 </style>
