@@ -3,7 +3,8 @@
        <div v-for="(q, i) in loveQuestions" :key="i">
            <div class="d-block">{{q.question}}</div>
            <b-row>
-               <b-col cols="3">{{q.answers}}</b-col>
+               <b-col cols="4" v-for="(a, j) in q.answers" :key="`a${i}${j}`">{{a}}</b-col>
+               <b-button variant="primary">test</b-button>
            </b-row>
        </div>
     </b-container>
