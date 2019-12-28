@@ -5,7 +5,7 @@
         <b-row class="align-items-center h-100">
           <b-col class="text-center">
             <b-container>
-            <img src="@/assets/logo-white.svg" class="tlogo" />
+              <img src="@/assets/logo-white.svg" class="tlogo" />
               <section>
                 <h2 class="my-4 text-center text-light">Community ที่เข้าถึงจิตด้วยความเข้าใจ</h2>
                 <b-row align-h="center" style="min-height: 50vh;">
@@ -14,11 +14,13 @@
                       class="card topc text-center d-flex h-100 justify-content-center align-items-center"
                       @click="onSelectActor('taker')"
                     >
-                    <img src="@/assets/landing/l.svg" class="lf"/>
-                    <h1 class="mt-5">Taker</h1>
-                    <h6 class="mt-5">ผู้รับ</h6> 
-                    <div class="sline" />
-                    <p class='m-2'>ผู้ที่มีความต้องการปรึกษาพูดคุยเพื่อแก้ไขความไม่สบายใจของตนเองให้ดีขึ้น</p>
+                      <img src="@/assets/landing/l.svg" class="lf" />
+                      <h1 class="mt-5">Taker</h1>
+                      <h6 class="mt-5">ผู้รับ</h6>
+                      <div class="sline" />
+                      <p
+                        class="m-2"
+                      >ผู้ที่มีความต้องการปรึกษาพูดคุยเพื่อแก้ไขความไม่สบายใจของตนเองให้ดีขึ้น</p>
                     </div>
                   </b-col>
                   <b-col cols="5">
@@ -26,11 +28,13 @@
                       class="card topc text-center d-flex h-100 justify-content-center align-items-center"
                       @click="onSelectActor('giver')"
                     >
-                    <img src="@/assets/landing/r.svg" class="lf"/>
-                    <h1 class="mt-5">Giver</h1>
-                    <h6 class="mt-5">ผู้ให้</h6> 
-                    <div class="sline" />
-                    <p class='m-2'>ผู้ที่มีความสามารถ และได้รับการรับรองในการให้คำปรึกษาแก่ผู้ที่มีภาวะวิตกกังวล หรือภาวะเครียด</p>
+                      <img src="@/assets/landing/r.svg" class="lf" />
+                      <h1 class="mt-5">Giver</h1>
+                      <h6 class="mt-5">ผู้ให้</h6>
+                      <div class="sline" />
+                      <p
+                        class="m-2"
+                      >ผู้ที่มีความสามารถ และได้รับการรับรองในการให้คำปรึกษาแก่ผู้ที่มีภาวะวิตกกังวล หรือภาวะเครียด</p>
                     </div>
                   </b-col>
                 </b-row>
@@ -65,6 +69,7 @@ export default {
 .taker-header {
   width: 100%;
   height: 70vh;
+  min-height: 700px;
   background-color: #ed0a36;
   overflow: hidden;
   background-image: url('../assets/takerHeader/right.svg'), url('../assets/takerHeader/left.svg');
@@ -77,7 +82,7 @@ export default {
 }
 .lf {
   width: 50%;
-  height: 10%
+  height: 10%;
 }
 .sline {
   width: 70%;

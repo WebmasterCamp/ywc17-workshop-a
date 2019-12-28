@@ -95,6 +95,9 @@ export default {
         offset: -70
     })
   },
+    onSelectActor() {
+      this.$router.push({ path: '/questionaire' })
+    }
   }
 }
 </script>
