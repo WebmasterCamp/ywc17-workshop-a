@@ -20,7 +20,7 @@
           <b-row>
             <b-col class md="12" sm="12">
               <b-card
-                class="giver-card text-center"
+                class="giver-card text-center topcard"
                 :img-src="require('@/assets/people-24px.svg')"
                 img-alt="Card image"
                 img-left
@@ -38,7 +38,7 @@
     <b-container>
       <section>
         <!-- <b-card-group deck v-for="(d, i) in headerData" :key="'giver_'+i"> -->
-        <h2 class="m-5">{{'Top 4 Recomended _____/h2'}}>
+        <h2 class="m-5">{{'Top 4 Recomended _____/h2'}}</h2>
         <b-container class="m-2" fluid>
           <b-row>
             <b-col class md="3" sm="12" deck v-for="(d, i) in headerData" :key="'giver_'+i">
@@ -74,6 +74,9 @@
 .headerIcon {
   width: 60px;
   height: 60px;
+}
+.topcard {
+
 }
 </style>
 
