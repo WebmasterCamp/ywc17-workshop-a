@@ -1,12 +1,22 @@
 [
     {
-        "img": "people-24px.svg",
+        "img": "heart.svg",
         "name": "ความรัก",
         "desc": "บลาๆๆๆๆๆ"
     },
     {
-        "img": "people-24px.svg",
+        "img": "money.svg",
         "name": "การเงิน",
+        "desc": "บลาๆๆๆๆๆ"
+    },
+    {
+        "img": "reletionship.svg",
+        "name": "ความสัมพันธ์",
+        "desc": "บลาๆๆๆๆๆ"
+    },
+    {
+        "img": "work.svg",
+        "name": "การทำงาน",
         "desc": "บลาๆๆๆๆๆ"
     }
 ]

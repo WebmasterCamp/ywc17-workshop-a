@@ -13,9 +13,9 @@
     <section v-for="(d, i) in headerData" :key="'body_'+i">
       <b-container class="takerChoice m-5">
         <b-row>
-          <b-col cols="8" v-if="i%2==1" class="align-items-center">
+          <b-col cols="8" v-if="i%2==1">
             <b-row class="d-flex justify-content-end">
-              <h6>{{d.name}}</h6>
+              <h2>{{d.name}}</h2>
             </b-row>
             <b-row class="d-flex justify-content-end">
               <p>{{d.desc}}</p>
@@ -25,11 +25,11 @@
             </b-row>
           </b-col>
           <b-col cols="4" fluid>
-            <img :src="require(`@/assets/${d.img}`)" class="body-img w-100" />
+            <img :src="require(`@/assets/headerLogos/${d.img}`)" class="body-img" />
           </b-col>
           <b-col cols="8" v-if="i%2==0">
             <b-row>
-              <h6>{{d.name}}</h6>
+              <h2>{{d.name}}</h2>
             </b-row>
             <b-row>
               <p>{{d.desc}}</p>
@@ -65,7 +65,11 @@
   bottom: 0px;
 }
 .hb {
-  margin-top: -10px;
+  margin-top: -1px;
+}
+.body-img {
+  width: 70%;
+  height: 70%;
 }
 </style>
 
