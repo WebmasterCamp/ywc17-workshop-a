@@ -28,7 +28,7 @@
                 <h1>Art therapy</h1>
                 <b-card-text>ถ้าคุณกำลังรู้สึกอ่อนล้าหรือเหน็ดเหนื่อยใจ มาผ่อนคลายไปด้วยกันกับการเยียวยาและบำบัดความเครียดด้วยตัวของคุณเองผ่านสีน้ำในคลาสศิลปะบำบัด</b-card-text>
                 <h6>2 มกราคม 63 14:00 - 18:30, Wolfpack gallery bangkok ชั้น 3 ศาลาแดง เขตบางรัก กรุงเทพมหานคร 10330</h6>
-                <b-button @click="onSelectActor(-1)" pill variant="secondary">จองเลย!</b-button>
+                <b-button @click="onSelectActor(-1)" pill variant="secondary" to="/payment">จองเลย!</b-button>
               </b-card>
             </b-col>
           </b-row>
@@ -115,7 +115,7 @@ export default {
   methods: {
     onSelectActor(i) {
       localStorage.setItem('selectedDoctor', i)
-      this.$router.push({ path: '/matching' })
+      // this.$router.push({ path: '/matching' })
     }
   }
 }
