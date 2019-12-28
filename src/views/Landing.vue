@@ -16,7 +16,7 @@
                     >
                       <img src="@/assets/landing/l.svg" class="lf" />
                       <h1 class="mt-5">Taker</h1>
-                      <h6 class="mt-5">ผู้รับ</h6>
+                      <h4 class="mt-5">ผู้รับ</h4>
                       <div class="sline" />
                       <p
                         class="m-2"
@@ -30,7 +30,7 @@
                     >
                       <img src="@/assets/landing/r.svg" class="lf" />
                       <h1 class="mt-5">Giver</h1>
-                      <h6 class="mt-5">ผู้ให้</h6>
+                      <h4 class="mt-5">ผู้ให้</h4>
                       <div class="sline" />
                       <p
                         class="m-2"
@@ -45,20 +45,23 @@
       </b-container>
     </section>
     <img class="hb w-100" src="@/assets/takerHeader/bottom.svg" />
+    <BecomeModal />
   </div>
 </template>
 
 <script>
+import BecomeModal from '@/components/BecomeModal'
 export default {
   methods: {
     onSelectActor(type) {
       if (type === 'taker') {
         this.$router.push({ path: '/taker' })
       } else {
-        // .. todo
+        this.$root.$emit('bv::show::modal', 'become-modal')
       }
     }
-  }
+  },
+  components: {BecomeModal}
 }
 </script>
 

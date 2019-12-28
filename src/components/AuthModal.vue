@@ -11,7 +11,7 @@
               </b-col>
               <b-col cols="7">
                 <b-form-group id="input-group-1" label="Password:" label-for="input-2">
-                  <b-form-input id="input-2" value="1234564789" type="password" required placeholder="Enter email"></b-form-input>
+                  <b-form-input id="input-2" value="1234564789" type="password" required placeholder="Enter Password"></b-form-input>
                 </b-form-group>
               </b-col>
               <b-col cols="7">
@@ -28,12 +28,12 @@
               </b-col>
               <b-col cols="7">
                 <b-form-group id="input-group-1" label="Password:" label-for="input-4">
-                  <b-form-input id="input-4" type="password" required placeholder="Enter email"></b-form-input>
+                  <b-form-input id="input-4" type="password" required placeholder="Enter Password"></b-form-input>
                 </b-form-group>
               </b-col>
               <b-col cols="7">
                 <b-form-group id="input-group-1" label="Re-Password:" label-for="input-5">
-                  <b-form-input id="input-5" type="password" required placeholder="Enter email"></b-form-input>
+                  <b-form-input id="input-5" type="password" required placeholder="Enter Re-Password"></b-form-input>
                 </b-form-group>
               </b-col>
               <b-col cols="7">
