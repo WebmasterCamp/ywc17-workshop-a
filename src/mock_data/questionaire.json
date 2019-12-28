@@ -8,8 +8,34 @@
                     "value": 1
                 },
                 {
-                    "label": "Choice 1",
+                    "label": "Choice 2",
                     "value": 21
+                },
+                {
+                    "label": "Choice 3",
+                    "value": 1
+                },
+                {
+                    "label": "Choice 4",
+                    "value": 21
+                }
+            ]
+        },
+        {
+            "question": "Question 2",
+            "answers": [
+                {
+                    "label": "Choice 2",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "question": "Question 3",
+            "answers": [
+                {
+                    "label": "Choice 3",
+                    "value": 1
                 }
             ]
         },
