@@ -710,6 +710,29 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@fullcalendar/daygrid@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/daygrid/-/daygrid-4.3.0.tgz#1b4ab9fdc238dba77921cb7c5bd2d813c834e905"
+  integrity sha512-OrGaRIGbELESOXOCXtoQVY4cOxnxmN7OrjDGbMoVITdoXWuIZ6sFNO84WcBQoRaIbkmqVM0SAU2MENwy+eEwqQ==
+
+"@fullcalendar/resource-common@~4.3.0":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/resource-common/-/resource-common-4.3.1.tgz#cf676c6c61a0a2879dc67d505b16a9a67694c0f2"
+  integrity sha512-c0u9jE1vUsXZJZZptdJ+OmGjBmkJYXr3OKbwqpc7ip49jiz5VSNZEdGR5fJ910GgbMrDTpYYMzbyifZE4XEzMw==
+
+"@fullcalendar/resource-timeline@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/resource-timeline/-/resource-timeline-4.3.0.tgz#4a1c1ce62c5c4174a6ceb6aa69f8ad5ac1b4c401"
+  integrity sha512-FOgrsanEjYGVCzzn4DRIeFGpLyA2apDPZ74snhovBOTsqO9043wNtkH8N6jlhnwIMC7EwNJNbtaY+MgapMBtUw==
+  dependencies:
+    "@fullcalendar/resource-common" "~4.3.0"
+    "@fullcalendar/timeline" "~4.3.0"
+
+"@fullcalendar/timeline@~4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/timeline/-/timeline-4.3.0.tgz#560a7e36ba25f686c7c8cdfbb5f489e9d4441760"
+  integrity sha512-uJ1Q9Kb4ZhxVT1koCiXjTye836d7W+OlIcNM/D2Qo4kmuRSkai4xJlcDHIctf661geEOs6Tgl5QKFdP/s1kKYQ==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -3461,6 +3484,11 @@ fstream@^1.0.0, fstream@^1.0.12:
     inherits "~2.0.0"
     mkdirp ">=0.5 0"
     rimraf "2"
+
+fullcalendar@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/fullcalendar/-/fullcalendar-3.10.1.tgz#cca3f9a2656a7e978a3f3facb7f35934a91185db"
+  integrity sha512-E0ioaHVmwdS4es8pNTUNva7505wPkUMFdn9JGFLYo+J12ARhN3zDBwoPj2DfB8rL7Yc1sSve+FqDHC3s2SZ7Fw==
 
 function-bind@^1.1.1:
   version "1.1.1"

@@ -8,9 +8,12 @@
     "pt": "prettier --write 'src/**/*.{js,vue,scss}'"
   },
   "dependencies": {
+    "@fullcalendar/daygrid": "^4.3.0",
+    "@fullcalendar/resource-timeline": "^4.3.0",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.4.3",
+    "fullcalendar": "^3.10.1",
     "vue": "^2.6.11",
     "vue-property-decorator": "^8.3.0",
     "vue-router": "^3.1.3",
