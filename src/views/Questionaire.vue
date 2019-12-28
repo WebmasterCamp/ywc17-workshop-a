@@ -16,7 +16,7 @@
           <div v-for="(q, i) in loveQuestions" :key="i" class="mb-5">
             <div v-if="i == currentQuestionNo && isStarted">
               <div class="question-wrapper">
-                <h4 class="d-block mb-4 text-white">{{q.question}}</h4>
+                <h4 class="mb-4 text-white pl-5 px-5">{{q.question}}</h4>
                 <b-row align-h="center">
                   <b-col cols="5" v-for="(a, j) in q.answers" :key="`a${i}${j}`">
                     <div class="choice-btn p-3 mt-3" :class="{ active: currentSelectedChoice == j }" @click="onSelectChoice(i, j)">{{a.label}}</div>
@@ -26,13 +26,13 @@
             </div>
           </div>
           <b-row class="my-4" align-h="center" v-if="isStarted">
-            <b-col cols="2" class="text-center">
-              <b-button pill variant="outline-primary start-btn" size="lg" block @click="addStep(-1)">
+            <!-- <b-col cols="2" class="text-center">
+              <b-button pill variant="outline-primary start-btn" size="lg" block @click="addStep(-1)" :disabled="currentQuestionNo === 0">
                 <i class="fas fa-arrow-left mr-2"></i>กลับ
               </b-button>
-            </b-col>
+            </b-col> -->
             <b-col cols="2" class="text-center">
-              <b-button pill variant="outline-primary start-btn" size="lg" block @click="addStep(1)">
+              <b-button pill variant="outline-primary start-btn" size="lg" block @click="addStep(1)" :disabled="currentSelectedChoice === null">
                 ต่อไป
                 <i class="fas fa-arrow-right"></i>
               </b-button>
@@ -66,6 +66,7 @@ export default class QuestionairePage extends Vue {
   }
 
   mounted() {
+      this.$root.$emit('bv::show::modal', 'auth-modal')
   }
 
   onStart() {
@@ -76,11 +77,11 @@ export default class QuestionairePage extends Vue {
     this.currentQuestionNo += step
 
     if (this.totalQuestions === this.currentQuestionNo) {
-      if (isLoggedIn()) {
-        this.showResult()
-      } else {
+    //   if (isLoggedIn()) {
+    //     this.showResult()
+    //   } else {
+    //       }
         this.$root.$emit('bv::show::modal', 'auth-modal')
-      }
     }
     this.currentSelectedChoice = null
   }
