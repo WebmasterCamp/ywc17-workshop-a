@@ -41,6 +41,7 @@
         </div>
       </b-container>
     </section>
+    <AuthModal @hide="goResult"></AuthModal>
   </div>
 </template>
 
@@ -49,8 +50,11 @@ import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
 import Questionaire from '@/mock_data/questionaire.json'
 import { isLoggedIn } from '../utils'
+import AuthModal from '@/components/AuthModal'
 
-@Component({})
+@Component({
+    components: {AuthModal}
+})
 export default class QuestionairePage extends Vue {
   currentQuestionNo = 0
   currentSelectedChoice = null
@@ -66,7 +70,7 @@ export default class QuestionairePage extends Vue {
   }
 
   mounted() {
-      this.$root.$emit('bv::show::modal', 'auth-modal')
+    //   this.$root.$emit('bv::show::modal', 'auth-modal
   }
 
   onStart() {
@@ -86,7 +90,7 @@ export default class QuestionairePage extends Vue {
     this.currentSelectedChoice = null
   }
 
-  showResult() {
+  goResult() {
     this.$router.push({ path: '/result' })
   }
 
