@@ -1,0 +1,32 @@
+{
+    "love": [
+        {
+            "question": "Question 1",
+            "answers": [
+                {
+                    "label": "Choice 1",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "question": "Question 2",
+            "answers": [
+                {
+                    "label": "Choice 2",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "question": "Question 3",
+            "answers": [
+                {
+                    "label": "Choice 3",
+                    "value": 1
+                }
+            ]
+        }
+    ]
+
+}
