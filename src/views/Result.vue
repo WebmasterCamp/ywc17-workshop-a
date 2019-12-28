@@ -41,18 +41,6 @@
         <h2 class="m-5">{{'Other suggestions'}}</h2>
         <b-container class="m-2" fluid>
           <b-row>
-            <b-col md="4" sm="12">
-              <b-card
-                class="giver-card text-center topcard2 h-100"
-                :img-src="require('@/assets/1.png')"
-                img-alt="Card image"
-                img-top
-              >
-                 <h3>คุณสมชาย ม่านนิรมิตร, นักจิตวิทยาสังคม</h3>
-                <b-card-text>ปรึกษาตัวต่อตัวกับ คุณ มินตรา นักจิตวิทยาสังคมมากด้วยประสบการณ์ เจ้าของเพจชื่อดัง “ทำยังไรให้ไหวตัวทัน” ที่เชื่อว่าทุกคนสามารถเปลี่ยนแปลงโลกได้ด้วยการสื่อสารที่ถูกจุด คุณสามารถรับคำปรึกษาได้อย่างเป็นส่วนตัว</b-card-text>
-                <b-button @click="onSelectActor(i)" pill variant="primary">จองเลย!</b-button>
-              </b-card>
-            </b-col>
             <b-col md="4" sm="12" deck v-for="(d, i) in resultData" :key="'giver_'+i">
               <b-card
                 class="giver-card text-center topcard3 h-100"
@@ -62,7 +50,7 @@
               >
                 <h3>{{d.name}}</h3>
                 <b-card-text>{{d.desc}}</b-card-text>
-                <b-button @click="onSelectActor(i)" pill variant="primary">จองเลย!</b-button>
+                <b-button @click="onSelectActor(i)" pill variant="primary" to="/payment">จองเลย!</b-button>
               </b-card>
             </b-col>
           </b-row>
@@ -92,7 +80,7 @@
   color: #fff;
   border-radius: 15px !important;
 }
-.topcard2 {
+.topcard3:hover {
   background-color: #7b8eff !important;
   color: #fff;
   border-radius: 15px !important;
