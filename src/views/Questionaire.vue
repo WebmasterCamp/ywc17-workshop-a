@@ -112,7 +112,7 @@ export default class QuestionairePage extends Vue {
   width: 100%;
   height: 50vh;
   background-color: #ed0a36;
-  overflow: hidden;
+  overflow: visible;
   background-image: url('../assets/takerHeader/right.svg'), url('../assets/takerHeader/left.svg');
   background-position: right -50px bottom 0px, -50px bottom;
   background-repeat: no-repeat, no-repeat;
