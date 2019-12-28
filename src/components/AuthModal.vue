@@ -1,5 +1,5 @@
 <template>
-    <b-modal id="auth-modal" size="lg" hide-header hide-footer>
+    <b-modal id="auth-modal" size="lg" hide-header hide-footer no-close-on-esc no-close-on-backdrop>
       <div>
         <b-tabs content-class="mt-3 py-3" align="center">
           <b-tab title="Login" active>

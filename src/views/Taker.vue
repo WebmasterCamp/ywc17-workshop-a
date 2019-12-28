@@ -5,7 +5,7 @@
           <b-row class="align-items-center h-100">
             <b-col class="text-center">
               <h1 class="text-center h-100 ht">Community ที่เข้าใจ เข้าถึงได้ เมื่อไม่สบายใจ</h1>
-              <h2 class="text-center h-100 ht">เพราะเราใส่ใจจะให้ทุกคนเข้าถึงกัน</h2>
+              <h2 class="text-center h-100 ht">เพราะเราใส่ใจอยากให้ทุกคนเข้าถึงกัน</h2>
               <b-button @click="moveTo('#section-2')" pill variant="primary mt-5 hbd" class="scoll-btn"><i class="fa fa-arrow-down" style="font-size: 2em;" aria-hidden="true"></i></b-button>
             </b-col>
           </b-row>
