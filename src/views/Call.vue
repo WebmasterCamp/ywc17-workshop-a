@@ -6,6 +6,9 @@
         <img src="@/assets/call.svg" class="end-btn-img"/>
       </b-button>
     </div>
+    <div class="call-timer position-absolute d-flex p-2 flex-row justify-content-center">
+      <h4>{{Math.floor(current/3600).toString().padStart(2, "0")+':'+Math.floor(current/60).toString().padStart(2, "0")+':'+Math.floor(current%60).toString().padStart(2, "0")}}</h4>
+    </div>
   </div>
 </template>
 
@@ -31,6 +34,11 @@
   .end-btn-img {
     fill: #FFF;
   }
+  .call-timer {
+    width: 100%;
+    top: 56px;
+    left: 0px;
+  }
 </style>
 
 <script>
@@ -44,7 +52,19 @@ export default {
     
   },
   data: () => ({
-    headerData: headerData
-  })
+    headerData: headerData,
+    initial: 0,
+    current: 0,
+    timerInterval: null,
+    interval: 1,
+  }),
+  methods: {
+    onInterval() {
+      this.current = this.current + this.interval
+    }
+  },
+  mounted() {
+    setInterval(this.onInterval, this.interval * 1000)
+  }
 }
 </script>

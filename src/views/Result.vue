@@ -1,8 +1,9 @@
 <template>
   <div class="result">
+    <b-container>
     <section>
       <b-card bg-variant="primary" text-variant="white" header="Primary" class="text-center">
-        <img src="@/assets/people-24px.svg" />
+        <img src="@/assets/mood_bad.svg" />
          <h6>{{'result desc'}}</h6>
         <b-card-text>อธิบาย</b-card-text>
       </b-card>
@@ -11,7 +12,7 @@
       <!-- <b-card-group deck v-for="(d, i) in headerData" :key="'giver_'+i"> -->
       <b-container fluid>
         <b-row>
-          <b-col class md="4" sm="12" deck v-for="(d, i) in headerData" :key="'giver_'+i">
+          <b-col class md="3" sm="12" deck v-for="(d, i) in headerData" :key="'giver_'+i">
             <b-card
               class="giver-card"
               :img-src="require('@/assets/people-24px.svg')"
@@ -25,6 +26,7 @@
       </b-container>
       <!-- </b-card-group> -->
     </section>
+    </b-container>
   </div>
 </template>
 
