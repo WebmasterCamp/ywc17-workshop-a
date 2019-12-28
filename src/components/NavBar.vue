@@ -1,6 +1,6 @@
 <template>
     <b-navbar toggleable="lg">
-    <b-navbar-brand href="#"> <i class="fas fa-heart"></i> Psyjai</b-navbar-brand>
+    <b-navbar-brand href="#"> <i class="fas fa-heart"></i> PsyJai</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
