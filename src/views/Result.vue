@@ -26,9 +26,9 @@
                 img-left
               >
                 <h1>Art therapy</h1>
-                <b-card-text>ถ้าคุณกำลังรู้สึกอ่อนล้าหรือเหน็ดเหนื่อยใจ มาผ่อนคลายไปด้วยกันกับการเยียวยาและบำบัดความเครียดด้วยตัวของคุณเองผ่านสีน้ำในคลาสศิลปะบำบัด</b-card-text>
-                <h6>2 มกราคม 63 14:00 - 18:30, Wolfpack gallery bangkok ชั้น 3 ศาลาแดง เขตบางรัก กรุงเทพมหานคร 10330</h6>
-                <b-button @click="onSelectActor(-1)" pill variant="secondary" to="/payment">จองเลย!</b-button>
+                <b-card-text class="mt-2">ถ้าคุณกำลังรู้สึกอ่อนล้าหรือเหน็ดเหนื่อยใจ มาผ่อนคลายไปด้วยกันกับการเยียวยาและบำบัดความเครียดด้วยตัวของคุณเองผ่านสีน้ำในคลาสศิลปะบำบัด</b-card-text>
+                <h6 class="mt-3">2 มกราคม 63 14:00 - 18:30, Wolfpack gallery bangkok ชั้น 3 ศาลาแดง เขตบางรัก กรุงเทพมหานคร 10330</h6>
+                <b-button class="mt-3" @click="onSelectActor(-1)" pill variant="secondary" to="/payment">จองเลย!</b-button>
               </b-card>
             </b-col>
           </b-row>
@@ -43,14 +43,14 @@
           <b-row>
             <b-col md="4" sm="12" deck v-for="(d, i) in resultData" :key="'giver_'+i">
               <b-card
-                class="giver-card text-center topcard3 h-100"
+                class="giver-card text-center topcard3 h-100 p justify-items-center align-content-center"
                 :img-src="require(`@/assets/${d.img}`)"
                 img-alt="Card image"
                 img-top
               >
                 <h3>{{d.name}}</h3>
-                <b-card-text>{{d.desc}}</b-card-text>
-                <b-button @click="onSelectActor(i)" pill variant="primary" to="/payment">จองเลย!</b-button>
+                <b-card-text class="m-2">{{d.desc}}</b-card-text>
+                <b-button class="m-2" @click="onSelectActor(i)" pill variant="primary" to="/payment">จองเลย!</b-button>
               </b-card>
             </b-col>
           </b-row>
