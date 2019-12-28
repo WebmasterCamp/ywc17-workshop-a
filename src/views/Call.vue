@@ -15,8 +15,9 @@
 <style>
   .call-controller {
     width: 100%;
-    bottom: 0px;
+    bottom: 20px;
     left: 0px;
+    padding-bottom: 10px;
   }
   .calling {
     width: 100%;
@@ -36,7 +37,7 @@
   }
   .call-timer {
     width: 100%;
-    top: 56px;
+    top: 70px;
     left: 0px;
   }
 </style>
