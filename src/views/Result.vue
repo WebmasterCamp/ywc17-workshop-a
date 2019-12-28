@@ -15,7 +15,7 @@
     <b-container>
       <section>
         <!-- <b-card-group deck v-for="(d, i) in headerData" :key="'giver_'+i"> -->
-        <h2 class="m-5">กิจกรรมที่คัดสรรมาเพื่อคุณ</h2>
+        <h2 class="m-5">{{'Top Suggestion'}}</h2>
         <b-container class="m-2" fluid>
           <b-row>
             <b-col class md="12" sm="12">
@@ -25,9 +25,10 @@
                 img-alt="Card image"
                 img-left
               >
-                <h1>testtttttt</h1>
-                <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
-                <b-button @click="onSelectActor(-1)" pill variant="primary">จองเลย!</b-button>
+                <h1>Art therapy</h1>
+                <b-card-text>ถ้าคุณกำลังรู้สึกอ่อนล้าหรือเหน็ดเหนื่อยใจ มาผ่อนคลายไปด้วยกันกับการเยียวยาและบำบัดความเครียดด้วยตัวของคุณเองผ่านสีน้ำในคลาสศิลปะบำบัด</b-card-text>
+                <h6>2 มกราคม 63 14:00 - 18:30, Wolfpack gallery bangkok ชั้น 3 ศาลาแดง เขตบางรัก กรุงเทพมหานคร 10330</h6>
+                <b-button @click="onSelectActor(-1)" pill variant="secondary">จองเลย!</b-button>
               </b-card>
             </b-col>
           </b-row>
@@ -37,24 +38,35 @@
     </b-container>
     <b-container>
       <section>
-        <!-- <b-card-group deck v-for="(d, i) in headerData" :key="'giver_'+i"> -->
-        <h2 class="m-5">{{'Top 4 Recomended _____/h2'}}</h2>
+        <h2 class="m-5">{{'Other suggestions'}}</h2>
         <b-container class="m-2" fluid>
           <b-row>
-            <b-col class md="3" sm="12" deck v-for="(d, i) in headerData" :key="'giver_'+i">
+            <b-col md="4" sm="12">
               <b-card
-                class="giver-card text-center"
+                class="giver-card text-center topcard2 h-100"
                 :img-src="require('@/assets/1.png')"
                 img-alt="Card image"
                 img-top
               >
-                <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
+                 <h3>คุณสมชาย ม่านนิรมิตร, นักจิตวิทยาสังคม</h3>
+                <b-card-text>ปรึกษาตัวต่อตัวกับ คุณ มินตรา นักจิตวิทยาสังคมมากด้วยประสบการณ์ เจ้าของเพจชื่อดัง “ทำยังไรให้ไหวตัวทัน” ที่เชื่อว่าทุกคนสามารถเปลี่ยนแปลงโลกได้ด้วยการสื่อสารที่ถูกจุด คุณสามารถรับคำปรึกษาได้อย่างเป็นส่วนตัว</b-card-text>
+                <b-button @click="onSelectActor(i)" pill variant="primary">จองเลย!</b-button>
+              </b-card>
+            </b-col>
+            <b-col md="4" sm="12" deck v-for="(d, i) in resultData" :key="'giver_'+i">
+              <b-card
+                class="giver-card text-center topcard3 h-100"
+                :img-src="require('@/assets/people-24px.svg')"
+                img-alt="Card image"
+                img-top
+              >
+                <h3>{{d.name}}</h3>
+                <b-card-text>{{d.desc}}</b-card-text>
                 <b-button @click="onSelectActor(i)" pill variant="primary">จองเลย!</b-button>
               </b-card>
             </b-col>
           </b-row>
         </b-container>
-        <!-- </b-card-group> -->
       </section>
     </b-container>
   </div>
@@ -76,24 +88,34 @@
   height: 120px;
 }
 .topcard {
-
+  background-color: #ed0a36 !important;
+  color: #fff;
+  border-radius: 15px !important;
+}
+.topcard2 {
+  background-color: #7b8eff !important;
+  color: #fff;
+  border-radius: 15px !important;
+}
+.topcard3 {
+  border-radius: 15px !important;
 }
 </style>
 
 <script>
 // @ is an alias to /src
-import headerData from '@/mock_data/header.json'
+import resultData from '@/mock_data/result.json'
 
 export default {
   name: 'home',
   components: {},
   data: () => ({
-    headerData: headerData
+    resultData: resultData
   }),
   methods: {
     onSelectActor(i) {
-      localStorage.setItem("selectedDoctor", i);
-      this.$router.push({ path: '/matching'})
+      localStorage.setItem('selectedDoctor', i)
+      this.$router.push({ path: '/matching' })
     }
   }
 }
