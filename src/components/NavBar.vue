@@ -1,7 +1,7 @@
 <template>
     <b-navbar toggleable="lg" v-if="$route.name !== 'landing'">
       <b-container>
-        <b-navbar-brand href="/home">
+        <b-navbar-brand href="/">
             <span>
               <img src="../assets/logo.svg" class="logo" />
               </span>

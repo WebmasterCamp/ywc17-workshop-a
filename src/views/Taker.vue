@@ -22,7 +22,7 @@
               <p>{{d.desc}}</p>
             </b-row>
             <b-row class="d-flex justify-content-end">
-              <b-button pill variant="primary">Button</b-button>
+              <b-button pill variant="primary">เลือก</b-button>
             </b-row>
           </b-col>
           <b-col cols="4" fluid>
