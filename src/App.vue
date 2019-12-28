@@ -2,6 +2,10 @@
   <div id="app">
     <NavBar />
     <router-view />
+
+    <b-modal id="auth-modal" hide-title>
+      <p class="my-4">Hello from modal!</p>
+    </b-modal>
   </div>
 </template>
 

@@ -2,6 +2,10 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 
+.bg-primary {
+    background-color: $primary;
+}
+
 * {
   font-family: 'Kanit', sans-serif;
 }
