@@ -27,8 +27,8 @@
               >
                 <h1>Art therapy</h1>
                 <b-card-text class="mt-2">ถ้าคุณกำลังรู้สึกอ่อนล้าหรือเหน็ดเหนื่อยใจ มาผ่อนคลายไปด้วยกันกับการเยียวยาและบำบัดความเครียดด้วยตัวของคุณเองผ่านสีน้ำในคลาสศิลปะบำบัด</b-card-text>
-                <h6 class="mt-3">2 มกราคม 63 14:00 - 18:30, Wolfpack gallery bangkok ชั้น 3 ศาลาแดง เขตบางรัก กรุงเทพมหานคร 10330</h6>
-                <b-button class="mt-3" @click="onSelectActor(-1)" pill variant="secondary" to="/payment">จองเลย!</b-button>
+                <h6 class="mt-5">2 มกราคม 63 14:00 - 18:30, Wolfpack gallery bangkok ชั้น 3 ศาลาแดง เขตบางรัก กรุงเทพมหานคร 10330</h6>
+                <b-button class="mt-5" @click="onSelectActor(-1)" pill variant="secondary" to="/payment">จองเลย!</b-button>
               </b-card>
             </b-col>
           </b-row>
