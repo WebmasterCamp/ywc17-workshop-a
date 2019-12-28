@@ -25,7 +25,7 @@
                 img-alt="Card image"
                 img-left
               >
-                <h1></h1>
+                <h1>testtttttt</h1>
                 <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
                 <b-button @click="onSelectActor(-1)" pill variant="primary">จองเลย!</b-button>
               </b-card>
@@ -38,7 +38,7 @@
     <b-container>
       <section>
         <!-- <b-card-group deck v-for="(d, i) in headerData" :key="'giver_'+i"> -->
-        <h2 class="m-5">{{'Top 4 Recomended _____/h2>
+        <h2 class="m-5">{{'Top 4 Recomended _____/h2'}}>
         <b-container class="m-2" fluid>
           <b-row>
             <b-col class md="3" sm="12" deck v-for="(d, i) in headerData" :key="'giver_'+i">
