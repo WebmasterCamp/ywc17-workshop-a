@@ -17,9 +17,9 @@ const routes = [
     component: Taker
   },
   {
-    path: '/questionair',
-    name: 'questionair',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Questionair.vue')
+    path: '/questionaire',
+    name: 'questionaire',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Questionaire.vue')
   },
   {
     path: '/matching',
