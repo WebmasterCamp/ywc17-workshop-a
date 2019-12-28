@@ -21,7 +21,7 @@
             <b-col class md="12" sm="12">
               <b-card
                 class="giver-card text-center topcard"
-                :img-src="require('@/assets/people-24px.svg')"
+                :img-src="require('@/assets/art.jpg')"
                 img-alt="Card image"
                 img-left
               >
@@ -56,7 +56,7 @@
             <b-col md="4" sm="12" deck v-for="(d, i) in resultData" :key="'giver_'+i">
               <b-card
                 class="giver-card text-center topcard3 h-100"
-                :img-src="require('@/assets/people-24px.svg')"
+                :img-src="require(`@/assets/${d.img}`)"
                 img-alt="Card image"
                 img-top
               >

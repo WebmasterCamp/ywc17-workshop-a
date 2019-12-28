@@ -22,11 +22,11 @@
               <p>{{d.desc}}</p>
             </b-row>
             <b-row class="d-flex justify-content-end">
-              <b-button pill variant="primary">เลือก</b-button>
+              <b-button @click="onSelectActor()" pill variant="primary">เลือก</b-button>
             </b-row>
           </b-col>
           <b-col cols="4" fluid>
-            <img :src="require(`@/assets/headerLogos/${d.img}`)" class="body-img" />
+            <img :src="require(`@/assets/${d.img}`)" class="body-img" />
           </b-col>
           <b-col cols="8" v-if="i%2==0">
             <b-row>
@@ -36,7 +36,7 @@
               <p>{{d.desc}}</p>
             </b-row>
             <b-row>
-              <b-button pill variant="primary">เลือก</b-button>
+              <b-button @click="onSelectActor()" pill variant="primary">เลือก</b-button>
             </b-row>
           </b-col>
         </b-row>
@@ -103,6 +103,9 @@ export default {
         offset: -70
     })
   },
+    onSelectActor() {
+      this.$router.push({ path: '/questionaire' })
+    }
   }
 }
 </script>
