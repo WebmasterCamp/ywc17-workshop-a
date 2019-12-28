@@ -2,7 +2,7 @@
   <div class="calling d-flex p-2 flex-col justify-content-center">
     <img src="@/assets/people-24px.svg" class="call-img"/>
     <div class="call-controller position-absolute d-flex p-2 flex-row justify-content-center">
-      <b-button pill class="end-btn" >
+      <b-button pill class="end-btn" to="/taker">
         <img src="@/assets/call.svg" class="end-btn-img"/>
       </b-button>
     </div>
