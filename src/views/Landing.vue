@@ -11,15 +11,27 @@
                 <b-row align-h="center" style="min-height: 50vh;">
                   <b-col cols="5">
                     <div
-                      class="card text-center d-flex h-100 justify-content-center"
+                      class="card topc text-center d-flex h-100 justify-content-center align-items-center"
                       @click="onSelectActor('taker')"
-                    >Taker</div>
+                    >
+                    <img src="@/assets/landing/l.svg" class="lf"/>
+                    <h1 class="mt-5">Taker</h1>
+                    <h6 class="mt-5">ผู้รับ</h6> 
+                    <div class="sline" />
+                    <p class='m-2'>ผู้ที่มีความต้องการปรึกษาพูดคุยเพื่อแก้ไขความไม่สบายใจของตนเองให้ดีขึ้น</p>
+                    </div>
                   </b-col>
                   <b-col cols="5">
                     <div
-                      class="card text-center d-flex h-100 justify-content-center"
+                      class="card topc text-center d-flex h-100 justify-content-center align-items-center"
                       @click="onSelectActor('giver')"
-                    >Giver</div>
+                    >
+                    <img src="@/assets/landing/r.svg" class="lf"/>
+                    <h1 class="mt-5">Giver</h1>
+                    <h6 class="mt-5">ผู้ให้</h6> 
+                    <div class="sline" />
+                    <p class='m-2'>ผู้ที่มีความสามารถ และได้รับการรับรองในการให้คำปรึกษาแก่ผู้ที่มีภาวะวิตกกังวล หรือภาวะเครียด</p>
+                    </div>
                   </b-col>
                 </b-row>
               </section>
@@ -61,6 +73,20 @@ export default {
   background-size: 25vh, 25vh;
 }
 .tlogo {
-    width: 30%;
+  width: 30%;
+}
+.lf {
+  width: 50%;
+  height: 10%
+}
+.sline {
+  width: 70%;
+  height: 3px;
+  border-bottom: 3px solid #ed0a36;
+  border-radius: 50%;
+}
+.topc:hover {
+  background-color: #d4d4d4;
+  cursor: pointer;
 }
 </style>

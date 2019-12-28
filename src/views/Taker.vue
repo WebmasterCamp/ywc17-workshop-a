@@ -36,7 +36,7 @@
               <p>{{d.desc}}</p>
             </b-row>
             <b-row>
-              <b-button pill variant="primary">Button</b-button>
+              <b-button pill variant="primary">เลือก</b-button>
             </b-row>
           </b-col>
         </b-row>
