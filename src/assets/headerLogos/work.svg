@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
-<style type="text/css">
-	.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'FontAwesome5Free-Solid';}
-	.st3{font-size:190.5485px;}
-</style>
-<circle class="st0" cx="677" cy="512" r="225.5"/>
-<text transform="matrix(1.0305 0 0 1 582.6837 585.0483)" class="st1 st2 st3"></text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 410"><defs><style>.cls-1{fill:#7b8eff;}.cls-2{fill:#ed0a36;}</style></defs><title>Asset 7</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M205,0C92,0,0,92,0,205S92,410,205,410s205-92,205-205S318,0,205,0Zm0,400C97.48,400,10,312.52,10,205S97.48,10,205,10,400,97.48,400,205,312.52,400,205,400Z"/><path class="cls-2" d="M277.5,184.82v22.66h-145V184.82a13.93,13.93,0,0,1,13.59-13.59h22.66v-13.6A13.93,13.93,0,0,1,182.34,144h45.32a13.93,13.93,0,0,1,13.59,13.59v13.6h22.66A13.93,13.93,0,0,1,277.5,184.82Zm-54.38,31.72H277.5v40.78a13.94,13.94,0,0,1-13.59,13.6H146.09a13.94,13.94,0,0,1-13.59-13.6V216.54h54.37v13.59a4.54,4.54,0,0,0,4.54,4.54h27.18a4.53,4.53,0,0,0,4.53-4.54Zm0-54.37H186.87v9.06h36.25Z"/></g></g></svg>
