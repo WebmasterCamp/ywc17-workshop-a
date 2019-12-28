@@ -12,8 +12,13 @@ const routes = [
   },
   {
     path: '/questionair',
-    name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Questionaire.vue')
+    name: 'questionair',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Questionair.vue')
+  },
+  {
+    path: '/matching',
+    name: 'matching',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Matching.vue')
   }
 ]
 
