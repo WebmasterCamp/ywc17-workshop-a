@@ -2,20 +2,20 @@
   <div class="result">
     <section class="taker-header">
       <b-container fluid class="h-100">
-        <b-row class="align-items-center h-100">
-          <b-col class="text-center">
-            <h1 class="text-center h-100 ht">Result</h1>
+        <b-row class="align-items-center h-100" align-h="center">
+          <b-col class="text-center" cols="6">
+            <h3 class="text-center h-100 ht">ผลความเสี่ยงด้านสภาวะทางสุขภาพจิตของคุณจากแบบทดสอบอยู่ในระดับ</h3>
             <img class="headerIcon m-2" src="@/assets/mood_bad.svg" />
-            <h2 class="m-2 text-light">{{'result desc'}}</h2>
-            <h4 class="m-2 text-light">{{'result desc'}}</h4>
-          </b-col>
+            <h4 class="m-2 text-light">ค่อนข้างไม่เสถียร</h4>
+            <p class="m-2 text-light" style="line-height: 1.5em;">ใส่ใจชื่นชมมากที่คุณให้ความสำคัญในการทำความเข้าใจความรู้สึกของตนเอง ถึงแม้ว่าสภาพทางจิตใจของคุณในช่วงนี้อยู่ในเกณฑ์ค่อนข้างไม่เสถียร แต่ใส่ใจไม่อยากให้คุณกังวลกับผลของแบบทดสอบมากจนเกินไป เพราะคุณสามารถจัดการเรื่องรับมือและจัดการกับสภาวะทางอารมณ์ของตัวเองได้หลายวิธีด้วยกัน</p>
+           </b-col>
         </b-row>
       </b-container>
     </section>
     <b-container>
       <section>
         <!-- <b-card-group deck v-for="(d, i) in headerData" :key="'giver_'+i"> -->
-        <h2 class="m-5">{{'กิจกรรม Workshop'}}</h2>
+        <h2 class="m-5">กิจกรรมที่คัดสรรมาเพื่อคุณ</h2>
         <b-container class="m-2" fluid>
           <b-row>
             <b-col class md="12" sm="12">
@@ -44,7 +44,7 @@
             <b-col class md="3" sm="12" deck v-for="(d, i) in headerData" :key="'giver_'+i">
               <b-card
                 class="giver-card text-center"
-                :img-src="require('@/assets/people-24px.svg')"
+                :img-src="require('@/assets/1.png')"
                 img-alt="Card image"
                 img-top
               >
@@ -63,7 +63,7 @@
 <style>
 .taker-header {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background-color: #ed0a36;
   overflow: hidden;
   background-image: url('../assets/takerHeader/right.svg'), url('../assets/takerHeader/left.svg');
@@ -72,8 +72,8 @@
   background-size: 25vh, 25vh;
 }
 .headerIcon {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
 }
 .topcard {
 
