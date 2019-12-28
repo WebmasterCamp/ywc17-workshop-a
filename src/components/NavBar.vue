@@ -13,6 +13,7 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-nav-item href="article"  :class="{active: $route.name === 'article' }">บทความ</b-nav-item> 
+            <b-nav-item href="call"  :class="{active: $route.name === 'call' }">ปรึกษาด่วน</b-nav-item> 
           </b-navbar-nav>
         </b-collapse>
       </b-container>
