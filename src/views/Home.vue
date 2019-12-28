@@ -4,11 +4,11 @@
      test
 
 
+    <CategoryDetail></CategoryDetail>
+    <CategoryDetail></CategoryDetail>
+    <CategoryDetail></CategoryDetail>
+    <CategoryDetail></CategoryDetail>
    </b-container>
-    <CategoryDetail></CategoryDetail>
-    <CategoryDetail></CategoryDetail>
-    <CategoryDetail></CategoryDetail>
-    <CategoryDetail></CategoryDetail>
 
 
 
