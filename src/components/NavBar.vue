@@ -20,6 +20,7 @@
 <style lang="css">
 .navbar {
     box-shadow: 0 8px 30px rgba(10,31,68,.1);
+    background: #fafafa;
 }
 .logo {
     height: 100%;

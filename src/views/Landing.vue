@@ -1,14 +1,14 @@
 <template>
     <b-container>
-        <div>
+        <section>
             <h1 class="my-4 text-center">คุณคือใคร ?</h1>
-            <b-row align-h="center">
+            <b-row align-h="center" style="min-height: 50vh;">
                 <b-col cols="5">
-                    <div class="card text-center" @click="onSelectActor('taker')">Taker</div>
+                    <div class="card text-center d-flex h-100 justify-content-center" @click="onSelectActor('taker')">Taker</div>
                 </b-col>
-                <b-col cols="5"><div class="card text-center" @click="onSelectActor('giver')">Giver</div></b-col>
+                <b-col cols="5"><div class="card text-center d-flex h-100 justify-content-center" @click="onSelectActor('giver')">Giver</div></b-col>
             </b-row>
-        </div>
+        </section>
     </b-container>
 </template>
 
@@ -26,5 +26,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.card-select {
+    min-height: 50vh;
+}
 </style>
