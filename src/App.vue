@@ -2,10 +2,6 @@
   <div id="app">
     <NavBar />
     <router-view />
-
-    <b-modal id="auth-modal" hide-title>
-      <p class="my-4">Hello from modal!</p>
-    </b-modal>
   </div>
 </template>
 
@@ -22,6 +18,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   box-sizing: border-box;
+  outline: none;
 }
 
 #nav {
