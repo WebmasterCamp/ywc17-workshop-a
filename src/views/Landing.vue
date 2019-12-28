@@ -1,13 +1,13 @@
 <template>
   <div>
-    <section class="taker-header">
+    <section class="taker-header pt-5">
       <b-container fluid class="h-100">
         <b-row class="align-items-center h-100">
           <b-col class="text-center">
             <b-container>
             <img src="@/assets/logo-white.svg" class="tlogo" />
               <section>
-                <h1 class="my-4 text-center text-light">Community ที่เข้าถึงจิตด้วยความเข้าใจ</h1>
+                <h2 class="my-4 text-center text-light">Community ที่เข้าถึงจิตด้วยความเข้าใจ</h2>
                 <b-row align-h="center" style="min-height: 50vh;">
                   <b-col cols="5">
                     <div

@@ -5,47 +5,36 @@
           <b-row class="align-items-center h-100">
             <b-col class="text-center">
               <h2 class="text-center h-100 ht">บลาๆๆๆๆ</h2>
-              <b-button @click="moveTo('.first-content')" pill variant="secondary mt-5 hbd"><i class="fa fa-arrow-down" aria-hidden="true"></i></b-button>
+              <b-button @click="moveTo('#section-2')" pill variant="primary mt-5 hbd" class="scoll-btn"><i class="fa fa-arrow-down" style="font-size: 2em;" aria-hidden="true"></i></b-button>
             </b-col>
           </b-row>
         </b-container>
     </section>
     <img class="hb w-100" src="@/assets/takerHeader/bottom.svg" />
-    <section v-for="(d, i) in headerData" :key="'body_'+i">
-      <b-container class="takerChoice m-5 first-content">
-        <b-row>
-          <b-col cols="8" v-if="i%2==1">
-            <b-row class="d-flex justify-content-end">
-              <h2>{{d.name}}</h2>
-            </b-row>
-            <b-row class="d-flex justify-content-end">
-              <p>{{d.desc}}</p>
-            </b-row>
-            <b-row class="d-flex justify-content-end">
-              <b-button @click="onSelectActor()" pill variant="primary">เลือก</b-button>
-            </b-row>
-          </b-col>
-          <b-col cols="4" fluid>
-            <img :src="require(`@/assets/${d.img}`)" class="body-img" />
-          </b-col>
-          <b-col cols="8" v-if="i%2==0">
-            <b-row>
-              <h2>{{d.name}}</h2>
-            </b-row>
-            <b-row>
-              <p>{{d.desc}}</p>
-            </b-row>
-            <b-row>
-              <b-button @click="onSelectActor()" pill variant="primary">เลือก</b-button>
-            </b-row>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
+  <b-container id="section-2">
+     <b-row class="content py-4" v-for="(d, i) in headerData" :key="'body_'+i">
+        <b-col cols="5" class="icon"> <img :src="require(`@/assets/headerLogos/${d.img}`)" class="body-img" /></b-col>
+        <b-col>
+          <div>
+            <h2>{{d.name}}</h2>
+            <p>{{d.desc}}</p>
+            <b-button pill variant="primary" to="/questionaire">เลือก</b-button>
+          </div>
+        </b-col>
+    </b-row>
+  </b-container>
+
   </div>
 </template>
 
 <style>
+.content:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.content:nth-child(2n) > .icon {
+     display: flex;
+        justify-content: flex-end;
+}
 .header-img {
   width: 60px;
   height: 60px;
@@ -71,6 +60,9 @@
 .body-img {
   width: 70%;
   height: 70%;
+}
+.scoll-btn {
+  border-color: #fafafa;
 }
 .ht {
   color: #FFF;
